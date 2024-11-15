@@ -1,5 +1,0 @@
-After a success build, following folders will be created in staging:
-
-./: header files for REE kernel/user space programs (such as tee_client_api.h)
-./tee: header files for TEE Trust Applications (Staging folder, files are copied from mbedtee-os)
-./rpc: common header files for REE/TEE
