@@ -1,5 +1,5 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 /*
- * SPDX-License-Identifier: Apache-2.0
  * Copyright (c) 2019 KapaXL (kapa.xl@outlook.com)
  *
  * RPC structures and macros between REE and TEE
@@ -77,7 +77,7 @@ struct rpc_cmd {
 	unsigned long shm;
 
 	/* cmd data */
-	unsigned long data[0];
+	unsigned long data[];
 };
 
 /*
@@ -134,7 +134,7 @@ struct rpc_param {
 struct rpc_ringbuf {
 	unsigned int wr;
 	unsigned int rd;
-	unsigned char mem[0];
+	unsigned char mem[];
 };
 
 #endif

@@ -1,7 +1,6 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 /*
- * SPDX-License-Identifier: Apache-2.0
  * Copyright (c) 2019 KapaXL (kapa.xl@outlook.com)
- *
  * Define the structures and macros for REEFS rpc
  */
 
@@ -42,14 +41,14 @@ struct reefs_cmd {
 
 	long len;
 
-	char data[0];
+	char data[];
 };
 
 struct reefs_dirent {
 	unsigned long	d_off;
 	unsigned short	d_reclen;
 	unsigned char	d_type;
-	char		d_name[1];
+	char		d_name[];
 };
 
 #endif
